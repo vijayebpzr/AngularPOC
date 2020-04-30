@@ -1,0 +1,7 @@
+<p>managechildcontainer works!</p>
+
+<app-childlistpresenter [childlist]="children$ | async"></app-childlistpresenter>
+<div class="alert alert-danger"
+     *ngIf="errorMessage$ | async as errorMessage">
+  {{errorMessage}}
+</div>
